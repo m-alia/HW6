@@ -87,7 +87,7 @@
         // if they are equal, nothing additional needs to happen
 
     if (orderBoulders.size() > 0) {
-        finalBoulder = orderBoulders.poll();
+        finalBoulder = orderBoulders.peek();
     }
     // at this point, the two possibilities are that there are no boulders in the queue, or there is one in the queue
     // if there's a boulder left in the queue, this is the final boulder, so return the weight, otherwise 0 is returned
